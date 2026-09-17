@@ -1,0 +1,54 @@
+/*Barra de búsqueda*/
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+
+nav li a {
+    display: block;
+    color: white;
+    padding: 20px 20px;
+    font-family: Arial Black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #555;
+}
+/************************/
+/*Contenedor de las tres tarjetas*/
+.contenedorA{
+    background-color: #2C1A0B;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 40px;
+    color: white;
+}
+.contenedorB{
+    display: flex;
+    background-color: lightgray;
+    padding: 50px;
+    border-radius: 10px;
+
+}
+.columna1{
+    flex: 2;
+    padding: 50px;
+}
+.columna2{
+    flex: 1;
+    padding: 20px;
+    align-content: center;
+}
+/************************/
+
+.logo{
+    width: 400px;
+    height: auto;
+}
