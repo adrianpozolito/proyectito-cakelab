@@ -22,7 +22,7 @@ nav li a:hover {
     background-color: #555;
 }
 /************************/
-/*Contenedor de las tres tarjetas*/
+/*Contenedor café*/
 .contenedorA{
     background-color: #2C1A0B;
     padding: 5px;
@@ -30,11 +30,12 @@ nav li a:hover {
     font-size: 40px;
     color: white;
 }
+/*Contenedor de columnas y columnas*/
 .contenedorB{
     display: flex;
     background-color: lightgray;
     padding: 50px;
-    border-radius: 10px;
+    border-radius: 50px;
 
 }
 .columna1{
@@ -48,47 +49,45 @@ nav li a:hover {
 }
 /*Contenedor de productos*/
 .contenedorC{
-    display: flex;
+   display: flex;
+    gap: 15px;
     padding: 5px;
-    border-radius: 10px;    
+    align-items: stretch;    
 }
-.contenedorP1{
-    flex: 1;
-    padding: 50px;
-    background-color: rgba(255, 204, 213, 0.7);
-    align-content: center;
-    text-align: center;
-    border-radius: 30px;
+.contenedorC img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
 }
-.contenedorP2{
-    flex: 1;
-    padding: 5opx;
-    background-color: rgba(184, 242, 214, 0.7);
-    align-content: center;
-    text-align: center;
-    border-radius: 30px;
-}
-.contenedorP3{
-    flex: 1;
-    padding: 50px;
-    background-color: rgba(173, 216, 230, 0.7);
-    align-content: center;
-    text-align: center;
-    border-radius: 30px;
-}
+.contenedorP1,
+.contenedorP2,
+.contenedorP3,
 .contenedorP4{
     flex: 1;
-    padding: 50px;
-    background-color: rgba(255, 218, 193, 0.7);
-    align-content: center;
+    box-sizing: border-box;
+    padding: 30px;
     text-align: center;
     border-radius: 30px;
+}
+.contenedorP1{
+    background-color: rgba(255, 204, 213, 0.7);
+}
+.contenedorP2{
+    background-color: rgba(184, 242, 214, 0.7);
+}
+.contenedorP3{
+    background-color: rgba(173, 216, 230, 0.7);
+}
+.contenedorP4{
+    background-color: rgba(255, 218, 193, 0.7);
 }
 .borde-letras {
     font-weight: bold;
     color: white; /* Color del relleno de la letra */
     
-    /*borde:2 píxeles de grosor y color negro */
+    /* Define el borde: 2 píxeles de grosor y color negro */
     -webkit-text-stroke: 2px #000000; 
 }
 /************************/
@@ -98,7 +97,7 @@ nav li a:hover {
     height: auto;
 }
 
-/* fuentes */
+/* Para todo el sitio web o los párrafos de tu tarjeta */
 body, p {
     font-family: 'Inter', sans-serif;
     font-weight: 400; /* Grosor normal, se ve muy limpio */
@@ -109,4 +108,44 @@ body, p {
 h1, h2 {
     font-family: 'Playfair Display', serif;
     font-weight: 600;
+}
+/*****AQUI INICIA LA PAGINA DE PRODUCTOS*****/
+.contenedorPancakes,
+.contenedorCupcakes,
+.contenedorMalteadas,
+.contenedorCrepas,
+.contenedorHelado_Yogurt,
+.contenedorBanderillas_Fruta,
+.contenedorBowlbar,
+.contenedorSnacks_Salados{
+ flex: 1;
+    box-sizing: border-box;
+    padding: 30px;
+    text-align: center;
+    border-radius: 30px;
+
+}
+.contenedorPancakes{
+    background-color: #F6D77A;
+}
+.contenedorCupcakes{
+    background-color: #F3B6C6;
+}
+.contenedorMalteadas{
+    background-color: #A8DCC5;
+}
+.contenedorCrepas{
+    background-color: #F4B183;
+}
+.contenedorHelado_Yogurt{
+    background-color: #A9D6E5;
+}
+.contenedorBanderillas_Fruta{
+    background-color: #F28C8C;
+}
+.contenedorBowlbar{
+    background-color: #C8B6E2;
+}
+.contenedorSnacks_Salados{
+    background-color: #D8B58A;
 }
