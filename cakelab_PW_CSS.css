@@ -70,6 +70,13 @@ nav li a:hover {
     padding: 30px;
     text-align: center;
     border-radius: 30px;
+    transition: transform 0.3s ease;
+}
+.contenedorP1:hover, 
+.contenedorP2:hover, 
+.contenedorP3:hover, 
+.contenedorP4:hover{
+    transform: translateY(-10px);
 }
 .contenedorP1{
     background-color: rgba(255, 204, 213, 0.7);
@@ -148,4 +155,38 @@ h1, h2 {
 }
 .contenedorSnacks_Salados{
     background-color: #D8B58A;
+}
+
+
+/*****AQUI INICIA LA PAGINA DE PROMOCIONES******/
+
+
+.contenedorMadrePromociones{
+    background-color: #FFFFFF;
+    padding: 5px;
+    border-radius: 25px;
+    max-width: 90%;
+    margin: 0 auto; 
+}
+.contenedorPromoViernes{
+    display: flex;
+    background-color: #A8DCC5;
+    padding: 50px;
+    border-radius: 50px;
+    align-items: center;
+}
+.cntPVI{
+    flex: 1;
+    padding: 20px;
+    align-content: center;
+}
+.cntPVD{
+    flex: 2;
+    padding: 50px;
+}
+
+.LetraConBorde{
+  font-size: 30px;
+  color: #2C1A0B; /* Usamos el café oscuro de tu barra de navegación */
+  font-weight: 800;
 }
